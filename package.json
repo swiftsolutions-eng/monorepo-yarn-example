@@ -1,0 +1,34 @@
+{
+  "name": "wms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:swiftsolutions-eng/monorepo-yarn-example.git",
+  "author": "Ade Yahya <adeyahyaprasetyo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "cd picking-app && expo-yarn-workspaces postinstall"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "picking-app"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/expo-status-bar",
+      "**/expo-status-bar/**",
+      "**/metro-config",
+      "**/metro-config/**",
+      "**/expo-yarn-workspaces",
+      "**/expo-yarn-workspaces/**"
+    ]
+  },
+  "private": true,
+  "devDependencies": {
+    "expo-yarn-workspaces": "^1.6.0",
+    "typescript": "^4.5.2"
+  }
+}

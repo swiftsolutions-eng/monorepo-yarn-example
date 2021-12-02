@@ -7,11 +7,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "expo-yarn-workspaces postinstall"
   },
   "dependencies": {
     "@apollo/client": "^3.5.5",
     "@wms/gqls": "1.0.0",
+    "@wms/hooks": "1.0.0",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "graphql": "^16.0.1",

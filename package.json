@@ -5,26 +5,12 @@
   "repository": "git@github.com:swiftsolutions-eng/monorepo-yarn-example.git",
   "author": "Ade Yahya <adeyahyaprasetyo@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "postinstall": "cd picking-app && expo-yarn-workspaces postinstall"
-  },
   "workspaces": {
     "packages": [
       "packages/*",
       "picking-app"
     ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**",
-      "**/expo",
-      "**/expo/**",
-      "**/expo-status-bar",
-      "**/expo-status-bar/**",
-      "**/metro-config",
-      "**/metro-config/**",
-      "**/expo-yarn-workspaces",
-      "**/expo-yarn-workspaces/**"
-    ]
+    "nohoist": []
   },
   "private": true,
   "devDependencies": {

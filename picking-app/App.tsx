@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import userRoleQuery from "@wms/gqls/queries/user/userRole.query";
+import { useMe } from "@wms/hooks";
 
 export default function App() {
-  console.log(userRoleQuery);
+  useMe();
+
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
